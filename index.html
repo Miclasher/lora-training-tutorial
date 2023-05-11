@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dataset gathering</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>LoRA/LyCORIS Training Tutorial</h1>
+	</header>
+	<main>
+        <button onclick="location.href='page1.html'">Instructions for Good PCs</button>
+		<button onclick="location.href='page2.html'">Instructions for Google Colab (any PC)</button>
+		<button onclick="location.href='tutorial1.html'">Coming soon</button>
+		<button onclick="location.href='tutorial2.html'">Coming soon</button> <br><br>
+		<h2>Dataset Gathering Tutorial</h2>
+        <h3><p>What is LoRA/LyCORIS?</p></h3>
+        <p>LoRA/LyCORIS are models which will make Stable Diffusion generate what you trained them for!</p>
+		<h3><p>This tutorial will teach you how to collect the dataset required for training LoRA/LyCORIS.</p></h3>
+        <p>There are two main ways in which you can collect images for dataset.</p><br>
+        <h3><p>Way 1 (tradiotional one)</p></h3>
+        <p>The thing is that you only need 8-30 images to train LoRA of any character choosen by you. That means you can collect images just by searching them with google</p>
+        <p>Step 1: Find ~12 images of character/artist whose style you want to generate picture with.</p>
+        <p>Step 2: Using online service <a href="https://www.birme.net/">Birme</a> crop your images to <b>512x512</b> resolution or less if your image was in smaller resolution</p>
+        <br><div class="image-container"><img src="images/birme.png"></div><br>
+        <p>Step 3: Create on your desktop folder <b><i>100_nameOfLoRA</i></b></p>
+        <p>Step 4: Place your pictures in folder and rename them like on picture below</p>
+        <br><div class="image-container"><img src="images/folder.png"></div><br>
+        <h3><p>Way 2 (IMO worse then first)</p></h3>
+        <p>Step 1: Click on <a href="https://colab.research.google.com/github/hollowstrawberry/kohya-colab/blob/main/Dataset_Maker.ipynb">this link</a> and follow instructions (they are easy to understand) but do not create captions</p>
+        <p>Step 2: Download and unzip folder</p>
+        <p>Step 3: Create on your desktop folder <b><i>100_nameOfLoRA</i></b></p>
+        <p>Step 4: Place your pictures in folder and rename them like on picture below</p>
+        <br><div class="image-container"><img src="images/folder.png"></div><br>
+    </main>
+	<footer>
+		<p>Copyright © 2023</p>
+	</footer>
+</body>
+</html>

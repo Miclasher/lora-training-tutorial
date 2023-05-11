@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Local LoRA/LyCORIS training</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>LoRA/LyCORIS Training Tutorial</h1>
+	</header>
+	<main>
+		<h2>Instructions for Users with Good PCs</h2>
+		<p>Step 1: Download portable <a href="https://github.com/serpotapov/Kohya_ss-GUI-LoRA-Portable">Kohya's webui by serpotapov</a> (You can find tutorial in its repo)</p>
+        <p>Step 2: Open webui using <b><i>lora-only-webui.bat</i></b></p>
+        <p>Step 3: Use this <a href="LoRA.json" download>config file</a> but you need to change some settings:</p>
+        <p>Download <a href="https://civitai.com/models/4823/deliberate">deliberate model</a> (or SD 1.5) and set path to safetensors/ckpt file</p>
+        <br><div class="image-container"><img src="images/set1.png"></div><br>
+        <p>Set here path to your desktop and name of your LoRA/LyCORIS</p>
+        <br><div class="image-container"><img src="images/set2.png"></div><br>
+        <p>Set your file type and Network Rank/Alpha (They need to be equal). The affect your end file size <br> <b>(size = network rank * 1.125)</b></p>
+        <p>Also you need to set mixed precision and save precision to f16 if your GPU is not NVIDIA RTX 20XX/30XX/40XX</p>
+        <br><div class="image-container"><img src="images/set3.png"></div><br>
+        <p>Step 4: Press orange train button</p>
+        <p>Step 5: <b>Imidiately</b> detete <b><i>samplers</i></b> folder from your desktop</p>
+        <p>Step 6: After finishing training process LoRA/LyCORIS will apear on your desktop</p>
+    </main>
+	<footer>
+		<p>Copyright © 2023</p>
+	</footer>
+</body>
+</html>
